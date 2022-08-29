@@ -11,4 +11,4 @@ wget -O install.sh https://raw.githubusercontent.com/gbxh/Yunzai-install/main/Yu
   
   
   
-##下一批适配的系统：centOS，Windows server
+## 下一批适配的系统：centOS，Windows server
