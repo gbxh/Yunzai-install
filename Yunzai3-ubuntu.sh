@@ -1,5 +1,5 @@
-curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash -
-sudo apt update && sudo apt install nodejs -y
+curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+sudo apt-get install -y nodejs
 sudo apt install redis redis-server -y
 sudo apt install chromium-browser -y
 sudo apt install libgbm-dev libasound2-dev -y
@@ -41,9 +41,10 @@ npm install node-schedule
 cd ~/Yunzai-Bot/plugins/python-plugin
 pip install -r requirement.txt
 echo export PATH="~/.local/bin:$PATH" >> ~/.bashrc
-source ./bashrc
+source ~/.bashrc
 cd ~/Yunzai-Bot
-npm install
+npm install pnpm -g
+pnpm install -P
 cd ~/Yunzai-Bot
 redis-server --save 900 1 --save 300 10 --daemonize yes
 node app
