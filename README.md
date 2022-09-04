@@ -5,7 +5,11 @@
 ```
 wget -O install.sh https://raw.githubusercontent.com/gbxh/Yunzai-install/main/Yunzai3-ubuntu.sh && sudo bash install.sh
 ```
-  
+### Ubuntu一键安装宝塔面板&云崽3.0&喵喵插件（beta）
+适用于没有GUI的服务器，用起来更好
+```
+wget -O install.sh https://raw.githubusercontent.com/gbxh/Yunzai-install/main/Yunzai3withBaota-ubuntu.sh && sudo bash install.sh
+```
 测试机型：[goormIDE](https://ide.goorm.io)免费容器（Ubuntu 18）  
 实测没有问题，感谢[大佬的这篇帖子](https://github.com/Le-niao/Yunzai-Bot/issues/154)，受益匪浅
   
