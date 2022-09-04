@@ -10,6 +10,20 @@ wget -O install.sh https://raw.githubusercontent.com/gbxh/Yunzai-install/main/Yu
 ```
 wget -O install.sh https://raw.githubusercontent.com/gbxh/Yunzai-install/main/Yunzai3withBaota-ubuntu.sh && sudo bash install.sh
 ```
+脚本对比：
+| 脚本对比 | 普通脚本 | Lite脚本  | 宝塔脚本 |
+| ------------ | ----------- | ----------- | ----------- |
+| 云崽主体 | √         | √         | √         |
+| 云崽版本 | V3          | V3          | V3          |
+| 宝塔面板 | ×          | ×          | √         |
+| 喵喵插件 | √         | √         | √         |
+| Node.Js      | V16         | V16         | V16         |
+| Redis        | √         | √         | √         |
+| Chrome       | √         | √         | √         |
+| 字体       | 汉仪文黑85W | 汉仪文黑85W | 汉仪文黑85W |
+| ffmpeg       | √         | ×          | √         |
+| opencore-amr | √         | ×          | √         |
+| python3      | √         | ×          | √         |
 测试机型：[goormIDE](https://ide.goorm.io)免费容器（Ubuntu 18）  
 实测没有问题，感谢[大佬的这篇帖子](https://github.com/Le-niao/Yunzai-Bot/issues/154)，受益匪浅
   
