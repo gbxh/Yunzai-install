@@ -15,6 +15,10 @@ wget -O install.sh https://raw.githubusercontent.com/gbxh/Yunzai-install/main/Yu
 ```
 wget -O install.sh https://raw.githubusercontent.com/gbxh/Yunzai-install/main/Yunzai3withBaota-ubuntu.sh && sudo bash install.sh
 ```
+**注意：如果你找不到宝塔的登录信息了，请试试这段代码**
+```
+/etc/init.d/bt default
+```
 脚本对比：
 | 脚本对比 | 普通脚本 | Lite脚本  | 宝塔脚本 |
 | ------------ | ----------- | ----------- | ----------- |
