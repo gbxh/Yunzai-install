@@ -20,5 +20,6 @@ cd ~/Yunzai-Bot
 npm install pnpm -g
 pnpm install -P
 cd ~/Yunzai-Bot
+npm install image-size
 redis-server --save 900 1 --save 300 10 --daemonize yes
 node app
