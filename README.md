@@ -1,11 +1,16 @@
 # 云崽机器人全自动安装脚本  
 会慢慢适配更多系统的  
 ## Ubuntu系统  
-### Ubuntu一键安装云崽3.0&喵喵插件（beta）
+### Ubuntu一键安装
 ```
 wget -O install.sh https://raw.githubusercontent.com/gbxh/Yunzai-install/main/Yunzai3-ubuntu.sh && sudo bash install.sh
 ```
-### Ubuntu一键安装宝塔面板&云崽3.0&喵喵插件（beta）
+### Ubuntu一键安装Lite版
+轻量版本，安装速度极快
+```
+wget -O install.sh https://raw.githubusercontent.com/gbxh/Yunzai-install/main/Yunzai3lite-ubuntu.sh && sudo bash install.sh
+```
+### Ubuntu一键安装宝塔版
 适用于没有GUI的服务器，用起来更好
 ```
 wget -O install.sh https://raw.githubusercontent.com/gbxh/Yunzai-install/main/Yunzai3withBaota-ubuntu.sh && sudo bash install.sh
