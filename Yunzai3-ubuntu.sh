@@ -21,6 +21,8 @@ sudo git clone https://git.ffmpeg.org/ffmpeg.git ffmpeg
 sudo mkdir ffmpeg/build && cd ffmpeg/build
 sudo ../configure --enable-gpl --enable-version3 --enable-nonfree --disable-ffplay --disable-ffprobe --enable-libopencore-amrnb --enable-libopencore-amrwb
 sudo make && sudo make install
+sudo echo "/usr/local/lib" >> /etc/ld.so.conf
+sudo ldconfig
 sudo apt install -y zlib1g zlib1g-dev libffi-dev openssl libssl-dev
 cd /usr/local/src
 sudo wget https://www.python.org/ftp/python/3.10.4/Python-3.10.4.tar.xz
@@ -41,8 +43,7 @@ pip install -r requirement.txt
 echo export PATH="~/.local/bin:$PATH" >> ~/.bashrc
 source ./bashrc
 cd ~/Yunzai-Bot
-sudo npm install cnpm -g
-cnpm install
+npm install
 cd ~/Yunzai-Bot
 redis-server --save 900 1 --save 300 10 --daemonize yes
 node app
