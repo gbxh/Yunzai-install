@@ -294,11 +294,7 @@ function menu(){
     echo " "
     echo "4.启动Redis"
     echo " "
-    echo "5.缺失组件修复（非专业人员慎点）"
-    echo " "
-	echo "6.安装土块插件"
-    echo " "
-	echo "7.安装锅巴插件"
+    echo "5.安装土块和锅巴插件"
     echo " "
     echo " "
     echo "0.关于本脚本"
@@ -314,19 +310,14 @@ function menu(){
     	;;
     	3)
     	cd ~/Yunzai-Bot
-		npm start
+	npm start
     	;;
     	4)
     	redis-server --save 900 1 --save 300 10 --daemonize yes
     	;;
     	5)
-    	sudo apt install -y libatk1.0-0 libcups2 libxkbcommon0 libxcomposite1 libxdamage1 libxfixes3 libxrandr2 libpango-1.0-0 libcairo2
-    	;;
-	6)
     	tukuai
-	;;
-	7)
-    	guoba
+	guoba
     	;;
     	0)
     	info
