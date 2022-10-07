@@ -238,6 +238,36 @@ cd ~/Yunzai-Bot
     echo -e ""
 
 }
+function tukuai(){
+echo -e "安装ffmpeg和opencore-amr"
+sudo apt install gcc g++ make yasm -y
+cd /usr/local/src
+sudo wget https://sourceforge.net/projects/opencore-amr/files/opencore-amr/opencore-amr-0.1.5.tar.gz/download
+sudo tar -xf download -C .
+sudo mkdir opencore-amr-0.1.5/build && cd opencore-amr-0.1.5/build
+sudo ../configure
+sudo make && sudo make install
+cd /usr/local/src
+sudo git clone https://git.ffmpeg.org/ffmpeg.git ffmpeg
+sudo mkdir ffmpeg/build && cd ffmpeg/build
+sudo ../configure --enable-gpl --enable-version3 --enable-nonfree --disable-ffplay --disable-ffprobe --enable-libopencore-amrnb --enable-libopencore-amrwb
+sudo make && sudo make install
+echo -e "完成"
+echo -e " "
+
+echo -e "安装土块插件"
+cd ~/Yunzai-Bot
+git clone https://github.com/SmallK111407/earth-k-plugin.git ./plugins/earth-k-plugin/
+echo -e "完成"
+echo -e " "
+}
+function guoba(){
+echo -e "安装锅巴插件"
+cd ~/Yunzai-Bot
+git clone --depth=1 https://gitee.com/guoba-yunzai/guoba-plugin.git ./plugins/Guoba-Plugin/
+echo -e "完成"
+echo -e " "
+}
 function info(){
     
     echo -e "
@@ -266,6 +296,10 @@ function menu(){
     echo " "
     echo "5.缺失组件修复（非专业人员慎点）"
     echo " "
+	echo "6.安装土块插件"
+    echo " "
+	echo "7.安装锅巴插件"
+    echo " "
     echo " "
     echo "0.关于本脚本"
     echo "____________________________________"
@@ -287,6 +321,11 @@ function menu(){
     	;;
     	5)
     	sudo apt install -y libatk1.0-0 libcups2 libxkbcommon0 libxcomposite1 libxdamage1 libxfixes3 libxrandr2 libpango-1.0-0 libcairo2
+    	;;
+		6)
+    	tukuai
+		7)
+    	guoba
     	;;
     	0)
     	info
