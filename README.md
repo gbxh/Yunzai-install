@@ -8,7 +8,7 @@ wget -O install.sh https://raw.githubusercontent.com/gbxh/Yunzai-install/main/Yu
 ### Ubuntu一键安装Lite版
 轻量版本，安装速度极快
 ```
-wget -O install.sh https://raw.githubusercontent.com/gbxh/Yunzai-install/main/Yunzai3lite-ubuntu.sh && sudo bash install.sh
+wget -O install.sh https://raw.githubusercontent.com/gbxh/Yunzai-install/main/Yunzai3lte-ubuntu.sh && sudo bash install.sh
 ```
 ### Ubuntu一键安装宝塔版
 适用于没有GUI的服务器，用起来更好
