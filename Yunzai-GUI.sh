@@ -322,9 +322,10 @@ function menu(){
     	5)
     	sudo apt install -y libatk1.0-0 libcups2 libxkbcommon0 libxcomposite1 libxdamage1 libxfixes3 libxrandr2 libpango-1.0-0 libcairo2
     	;;
-		6)
+	6)
     	tukuai
-		7)
+	;;
+	7)
     	guoba
     	;;
     	0)
