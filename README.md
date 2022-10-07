@@ -1,5 +1,10 @@
 # 云崽机器人全自动安装脚本  
 会慢慢适配更多系统的  
+## 交互式安装（beta） 
+```
+bash <(curl -Lso- https://raw.githubusercontent.com/gbxh/Yunzai-install/main/Yunzai-GUI.sh)
+```
+
 ## Ubuntu系统  
 ### Ubuntu一键安装
 ```
